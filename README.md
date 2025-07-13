@@ -4,7 +4,7 @@ This project demonstrates a conversational AI chatbot using [LangGraph](https://
 
 ## Features
 
-- **Conversational AI**: Powered by LangGraph and OpenAI's GPT-4o-mini (or Azure OpenAI, if configured).
+- **Conversational AI**: Powered by LangGraph and OpenAI's GPT-4o-mini.
 - **Generic Tool Integration**: Easily plug in new tools (Google Serper, Jira, etc.) as LangChain Tools or custom interfaces.
 - **Memory**: Maintains conversation history using LangGraph's `MemorySaver`.
 - **Gradio UI**: Simple chat interface for easy interaction.
