@@ -1,0 +1,36 @@
+[project]
+name = "langgraph-chatbot-uv"
+version = "0.1.0"
+description = "Conversational AI chatbot with generic, extensible tool integration using LangGraph, LangChain, and Gradio."
+authors = [
+    { name="Your Name", email="your@email.com" }
+]
+readme = "README.md"
+requires-python = ">=3.8"
+
+dependencies = [
+    "langgraph",
+    "langchain",
+    "gradio",
+    "python-dotenv",
+    "httpx",
+    "requests"
+]
+
+[project.optional-dependencies]
+serper = [
+    "langchain_community"
+]
+jira = [
+    "jira"
+]
+
+[tool.setuptools]
+packages = ["langgraph_chatbot_uv"]
+
+[tool.uv]
+resolve = ["pypi"]
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
